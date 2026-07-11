@@ -14,5 +14,24 @@ II. Data Sources:
       REST API: https://api.github.com/repos/ThiDiemKieuKy/MicrosoftFabricDE/contents/datasets/status
       Git url:  https://github.com/ThiDiemKieuKy/MicrosoftFabricDE/blob/main/datasets/status/00.json
       Raw Data: https://raw.githubusercontent.com/ThiDiemKieuKy/MicrosoftFabricDE/main/datasets/status/00.json
-III. 
+
+III. Target Architecture:
+- Lakehouse 
+      — LH_RetailsCustomers (OneLake storage for Bronze/Silver/Gold Delta tables and raw Files
+            - Bronze:
+                  - Files/bronze/customers
+                  - Files/bronze/orders
+                  - Files/bronze/status
+            - Silver:
+                  - Table/silver_customers
+                  - Table/silver_orders
+                  - Table/silver_status
+            - Gold:
+                  - Table/
+- Notebooks — PySpark for transformation logic, Spark SQL for validation queries
+- Data Pipeline — orchestrates: 
+            Copy Data (taxi sample) → Notebook (transform orders) → Notebook (build Gold) → refresh semantic model
+- Dataflow Gen2 (optional) — for the reference/enrichment dataset, using Power Query
+- Warehouse / SQL analytics endpoint — exposes Gold tables for BI and ad hoc SQL
+- Power BI — semantic model + report on Gold layer
     
