@@ -1,0 +1,18 @@
+I. Business Objective
+
+
+II. Data Sources:
+- Customers: 
+      REST API: https://api.github.com/repos/ThiDiemKieuKy/MicrosoftFabricDE/contents/datasets/customers
+      Git url:  https://github.com/ThiDiemKieuKy/MicrosoftFabricDE/blob/main/datasets/customers/00.json
+      Raw Data: https://raw.githubusercontent.com/ThiDiemKieuKy/MicrosoftFabricDE/main/datasets/customers/00.json
+- Orders:
+      REST API: https://api.github.com/repos/ThiDiemKieuKy/MicrosoftFabricDE/contents/datasets/orders
+      Git url:  https://github.com/ThiDiemKieuKy/MicrosoftFabricDE/blob/main/datasets/orders/00.json
+      Raw Data: https://raw.githubusercontent.com/ThiDiemKieuKy/MicrosoftFabricDE/main/datasets/orders/00.json
+- Status: 
+      REST API: https://api.github.com/repos/ThiDiemKieuKy/MicrosoftFabricDE/contents/datasets/status
+      Git url:  https://github.com/ThiDiemKieuKy/MicrosoftFabricDE/blob/main/datasets/status/00.json
+      Raw Data: https://raw.githubusercontent.com/ThiDiemKieuKy/MicrosoftFabricDE/main/datasets/status/00.json
+III. 
+    
