@@ -30,6 +30,9 @@ III. Target Architecture:
                   - Table/
 - Notebooks — PySpark for transformation logic, Spark SQL for validation queries
 - Data Pipeline — orchestrates: 
+            - Bronze:
+                  - PL_RetailsCustomers_ChildDownloadFolderFiles (download all files from specified folder, e.g. json files in customer folder)
+                  - 
             Copy Data (taxi sample) → Notebook (transform orders) → Notebook (build Gold) → refresh semantic model
 - Dataflow Gen2 (optional) — for the reference/enrichment dataset, using Power Query
 - Warehouse / SQL analytics endpoint — exposes Gold tables for BI and ad hoc SQL
